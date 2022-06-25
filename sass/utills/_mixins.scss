@@ -1,0 +1,12 @@
+@mixin font($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh / $fs;
+}
+
+
+@mixin reset {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
