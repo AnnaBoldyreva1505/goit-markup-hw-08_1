@@ -60,22 +60,32 @@ body {
   padding-bottom: 94px;
 }
 
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .clients-item {
   display: flex;
   justify-content: center;
 }
 
-.clients-item-list {
+.clients-item {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: stretch;
+  margin-left: -30px;
+  margin-top: -30px;
 }
-.clients-item-list:not(:last-child) {
-  margin-right: 30px;
+
+.clients-item-list {
+  flex-basis: calc((100% - 60px) / 2);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .clients-link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -99,6 +109,27 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .clients-item-list {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+
+  .clients-link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item-list {
+    display: flex;
+    flex-basis: auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .clients-item-list .clients-link {
+    width: 170px;
+  }
+}
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/banner.jpg);
   background-repeat: no-repeat;
@@ -292,25 +323,21 @@ body {
   transform: translate(0, 0);
 }
 
-.employee {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+.our-team {
+  background-color: var(--bacground-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .employees-card {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-left: 30px;
-  margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
 .employees-border {
-  background: #FFFFFF;
+  background: #ffffff;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .our-team-names {
@@ -320,10 +347,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-}
-
-.our-team {
-  background-color: #F5F4FA;
 }
 
 .our-team-position {
@@ -342,6 +365,9 @@ body {
 }
 
 .our-team-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -361,11 +387,57 @@ body {
 .our-team-item-logo:hover {
   fill: var(--text-white);
 }
-
-.our-team-item-list:not(:last-child) {
+.our-team-item-logo .our-team-item-list:not(:last-child) {
   margin-right: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .employees-card > img {
+    width: 450px;
+    height: 460px;
+  }
+
+  .employees-card:not(last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .employees-card > img {
+    width: 354px;
+    height: 374px;
+  }
+
+  .employee {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .employees-card {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team {
+    background-color: #f5f4fa;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .employees-card {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+
+  .employees-card > img {
+    width: 270px;
+    height: 260px;
+  }
+}
 .values {
   background-color: #ffffff;
   padding-bottom: 60px;
@@ -626,6 +698,7 @@ body {
   .footer-subscription {
     display: flex;
     flex-direction: row;
+    margin-top: 0px;
   }
 
   .footer-address {
@@ -833,6 +906,7 @@ body {
   --text-black: black;
   --text-white: white;
   --icon-fill: #AFB1B8;
+  --bacground-color: #F5F4FA;
 }
 
 .visually-hidden {
@@ -848,7 +922,7 @@ body {
   overflow: hidden;
 }
 
-.checkbox__label, .modal__btn_close, .clients-link, .our-team-social-link, .footer-social-link {
+.checkbox__label, .modal__btn_close, .clients-link, .footer-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
