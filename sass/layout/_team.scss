@@ -1,8 +1,8 @@
-  .our-team {
-      background-color: var(--bacground-color);
-      padding-top: 60px;
-      padding-bottom: 60px;
-  }
+.our-team {
+  background-color: var(--bacground-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .employees-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -74,13 +74,13 @@
   }
 }
 
+    .employees-card > img {
+      max-width: 100%;
+      // height: auto;
+    }
+
 @media screen and (max-width: 767px) {
 
-
-  .employees-card > img {
-    width: 450px;
-    height: 460px;
-  }
 
   .employees-card:not(last-child) {
     margin-bottom: 30px;
@@ -89,25 +89,23 @@
 
 // // =================================768===================================
 @media screen and (min-width: 768px) {
-    .employees-card>img {
-            width: 354px;
-            height: 374px;
-        }
 
-                .employee {
-                    display: flex;
-                    flex-wrap: wrap;
-                    margin-left: -30px;
-                    margin-top: -30px;
-                }
-        
-                .employees-card {
-                    flex-basis: calc((100% - 60px) / 2);
-                    margin-left: 30px;
-                    margin-top: 30px;
-                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-                    border-radius: 0px 0px 4px 4px;
-                }
+
+  .employee {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+
+  .employees-card {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
 }
 
 // // =================================1200===================================
@@ -115,17 +113,12 @@
   .our-team {
     background-color: #f5f4fa;
     padding-top: 94px;
-        padding-bottom: 94px;
+    padding-bottom: 94px;
   }
 
   .employees-card {
-      flex-basis: calc((100% - 120px) / 4);
-}
-.employees-card> img {
-    width: 270px;
-    height: 260px;
-}
-
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 // .employee {
