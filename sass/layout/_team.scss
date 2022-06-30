@@ -75,8 +75,9 @@
 }
 
     .employees-card > img {
-      max-width: 100%;
-      // height: auto;
+      display: block;
+        max-width: 100%;
+        height: auto;
     }
 
 @media screen and (max-width: 767px) {
