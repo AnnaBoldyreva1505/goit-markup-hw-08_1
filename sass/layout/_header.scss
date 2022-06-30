@@ -1,23 +1,8 @@
-
-// @media screen and (max-width: 767px) {}
-
-// // =================================768===================================
-// @media screen and (min-width: 768px) {}
-
-
-// // =================================1200===================================
-// @media screen and (min-width: 1200px) {}
-
-
-
-
-
-
-
 .page-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 @media screen and (max-width: 767px) {
@@ -30,6 +15,7 @@
   }
 
   .page-header {
+        border-bottom: 1px solid #e5e5e5;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -53,7 +39,7 @@
 @media screen and (min-width: 768px) {
   .page-header {
     background-color: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
+border-bottom: 1px solid #e5e5e5;
   }
 
   .mobile-menu-open-btn {
