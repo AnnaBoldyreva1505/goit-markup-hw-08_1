@@ -136,18 +136,23 @@ body {
   }
 }
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/banner.jpg);
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header-mobile@1x.jpg");
   max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-repeat: no-repeat;
   display: block;
   margin: 0 auto;
   background-color: #2f303a;
-  padding-top: 118px;
-  padding-bottom: 118px;
   width: auto;
   text-align: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("/images/header-mobile@2x.jpg");
+  }
+}
 .hero__header {
   font-weight: 900;
   font-size: 26px;
@@ -185,18 +190,18 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/banner.jpg);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header-tablet@1x.jpg");
     max-width: 768px;
-    display: block;
-    margin: 0 auto;
-    background-color: #2f303a;
     padding-top: 118px;
     padding-bottom: 118px;
-    width: auto;
-    text-align: center;
   }
-
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("/images/header-tablet@2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
   .hero__header {
     font-size: 26px;
     line-height: 1.62;
@@ -206,13 +211,18 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/banner.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/header-desktop.jpg");
     max-width: 1600px;
-    background-color: #2f303a;
     padding-top: 200px;
     padding-bottom: 200px;
   }
-
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: url("/images/header-desktop@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero__header {
     font-weight: 900;
     font-size: 44px;

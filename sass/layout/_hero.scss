@@ -1,15 +1,23 @@
 .hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/banner.jpg);
-  background-repeat: no-repeat;
+    url('/images/header-mobile@1x.jpg');
   max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-repeat: no-repeat;
   display: block;
   margin: 0 auto;
   background-color: #2f303a;
-  padding-top: 118px;
-  padding-bottom: 118px;
   width: auto;
   text-align: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('/images/header-mobile@2x.jpg');
+  }
 }
 
 .hero__header {
@@ -56,18 +64,19 @@
 
 // =================================768===================================
 @media screen and (min-width: 768px) {
-  .hero {
+.hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero/banner.jpg);
-    background-repeat: no-repeat;
+      url('/images/header-tablet@1x.jpg');
     max-width: 768px;
-    display: block;
-    margin: 0 auto;
-    background-color: #2f303a;
     padding-top: 118px;
     padding-bottom: 118px;
-    width: auto;
-    text-align: center;
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url('/images/header-tablet@2x.jpg');
+    }
+  }
   }
 
   .hero__header {
@@ -76,20 +85,25 @@
     letter-spacing: 0.06em;
     max-width: 360px;
   }
-
- 
 }
 
 // =================================1200===================================
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero/banner.jpg);
-    max-width: 1600px;
-    background-color: #2f303a;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('/images/header-desktop.jpg');
+          max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        .hero {
+          background-image: url('/images/header-desktop@2x.jpg');
+        }
   }
+}
 
   .hero__header {
     font-weight: 900;
@@ -101,7 +115,7 @@
 
 // .hero {
 //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//     url(../images/hero/banner.jpg);
+//     url('/images/banner.jpg');
 //   background-repeat: no-repeat;
 //   max-width: 1600px;
 //   display: block;
