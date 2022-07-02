@@ -29,13 +29,13 @@
   width: 100%;
 
   @media screen and (max-width: 1199px) {
-      max-width: 450px;
-      overflow: scroll;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      max-width: 530px;
-}
+    max-width: 450px;
+    overflow: scroll;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 530px;
+  }
 }
 
 .modal-close-logo {
@@ -169,11 +169,11 @@
 }
 
 .checkbox__label {
-// display: flex;
-//   justify-content: center;
-//   align-items: center;
+  // display: flex;
+  //   justify-content: center;
+  //   align-items: center;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 30px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -218,11 +218,11 @@
     border-color: var(--accent-color);
   }
 
-  
+
 }
 
 .checkbox__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);

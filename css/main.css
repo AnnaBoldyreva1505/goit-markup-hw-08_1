@@ -1328,7 +1328,7 @@ body {
 
 .checkbox__label {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 30px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -1359,7 +1359,7 @@ body {
 }
 
 .checkbox__link {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
