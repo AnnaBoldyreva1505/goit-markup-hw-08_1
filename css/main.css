@@ -1204,7 +1204,7 @@ body {
 }
 @media screen and (max-height: 768px) {
   .modal {
-    height: 100%;
+    height: 98%;
     overflow-y: scroll;
   }
 }
